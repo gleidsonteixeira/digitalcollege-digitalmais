@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital +</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <main>
+        <section id="topo">
+            <div class="logo">
+                <img src="images/logo.png" alt="Digital College">
+            </div>
+            <div class="conteudo">
+                <h6>Torne-se um</h6>
+                <h1>Full Stack</h1>
+                <h6>Seja um desenvolvedor com conhecimento em Front-End e Back-End</h6>
+                <p>Você aprenderá a conduzir todos os estágios de desenvolvimento de sites e apps, desde a interface até estruturas internas ou bancos de dados. Aprenda HTML5, CSS3, Javascript, React, banco de dados e outras. Torne-se um profissional completo e ganhe mais.</p>
+            </div>
+            <form id="cadastro" onsubmit="salvarNaAPI()">
+                <h3>Faça sua pré-matrícula</h3>
+                <p>Chegou a hora de você transformar sua vida, garanta sua vaga preenchendo os campos abaixo agora mesmo!</p>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Digite seu nome" required/>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Digite seu email" required/>
+                <label for="whatsapp">Whatsapp</label>
+                <input type="tel" id="whatsapp" placeholder="(00) 00000-0000" required/>
+                <label for="objetivo">Objetivo</label>
+                <select id="objetivo">
+                    <option disabled selected>Escolha uma opção</option>
+                    <option>Mudar de Carreira</option>
+                    <option>Ganhar Mais(Bufunfa)</option>
+                    <option>Trabalhar de Casa</option>
+                    <option>Qualidade de Vida</option>
+                </select>
+                <button type="submit" id="btn">Enviar</button>
+            </form>
+        </section>
+        <section>
+            <table>
+                <thead>
+                    <th>id</th>
+                    <th>nome</th>
+                    <th>email</th>
+                    <th>tel</th>
+                </thead>
+                <tbody id="tabela"></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

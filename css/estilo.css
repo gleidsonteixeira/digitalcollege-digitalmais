@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+#topo{
+    background-image: url("../images/bg_topo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 100px;
+    padding-top: 30px;
+    padding-bottom: 95px;
+    position: relative;
+}
+
+#topo .logo{
+    margin-bottom: 80px;
+}
+
+#topo .conteudo{
+    width: 505px;
+    color: #FFFFFF;
+}
+
+#topo .conteudo h6{
+    font-size: 18px;
+}
+
+#topo .conteudo h1{
+    font-size: 64px;
+}
+
+#topo .conteudo p{
+    margin-top: 26px;
+}
+
+#topo form{
+    width: 350px;
+    background-color: #FFFFFF;
+    padding: 16px;
+    padding-bottom: 26px;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    position: absolute;
+    top: 130px;
+    right: 235px;
+}
+
+#topo form h3{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+#topo form p{
+    margin-bottom: 16px;
+}
+
+#topo form label{
+    display: block;
+    font-size: 12px;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+#topo form input,
+#topo form select{
+    height: 50px;
+    border: 1px solid #C6C6C6;
+    outline: none;
+    padding-left: 10px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    width: 100%;
+    transition-duration: 300ms;
+}
+
+#topo form input:focus,
+#topo form select:focus{
+    border-color: #C61066;
+}
+
+#topo form button{
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #C61066;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+
+#topo form button:hover{
+    background-color: #9a064b;
+}
+
+#topo form button:disabled{
+    background-color: #666666;
+    color: #333333;
+}
+
+
+@media only screen and ( max-width: 1024px ){
+    #topo{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    #topo form{
+        right: 60px;
+    }
+}
+
+@media only screen and ( max-width: 768px ){
+    #topo form{
+        position: initial;
+        top: initial;
+        right: initial;
+        margin-top: 26px;
+        width: 100%;
+    }
+    #topo .conteudo{
+        width: 100%;
+    }
+}
+
+@media only screen and ( max-width: 480px ){
+    #topo{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    #topo .conteudo h6,
+    #topo .conteudo h1{
+        text-align: center;
+    }
+    #topo .conteudo p{
+        text-align: justify;
+    }
+}
